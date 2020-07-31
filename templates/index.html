@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="titlepage text_align_center ">
+<h2>This webapp predict whether Covid patient require icu or not.</h2>
+    </div>
+
+
+
+
+      <div class="coronata">
+         <div class="container">
+            <div class="row d_flex grid">
+               <div class="col-md-7">
+                  <div class="coronata_img text_align_center">
+                     <figure><img src="{{ url_for('static',filename='corona.png')}}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-5 oder1">
+                  <div class="titlepage text_align_left">
+                     <h2><span style="font-size: 150%;">C</span>oronavirus what it is?</h2>
+                     <p>Coronaviruses are a type of virus. There are many different kinds, and some cause disease. A newly identified coronavirus, SARS-CoV-2, has caused a worldwide pandemic of respiratory illness, called COVID-19.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+<div class="cases">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center ">
+                     <h2>How to Protect Yourself</h2>
+                     <p></p>
+                  </div>
+               </div>
+            </div>
+            <div class="row d_flex">
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="{{url_for('static',filename='images/pro1.png')}}" alt="#"/></figure>
+                     <div class="nostrud">
+                        <h3>Wear Mask</h3>
+                        <p>Masks should be used as part of a comprehensive strategy of measures to suppress transmission and save lives; the use of a mask alone is not sufficient to provide an adequate level of protection against COVID-19. You should also maintain a minimum physical distance of at least 1 metre from others, frequently clean your hands and avoid touching your face and mask.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="{{url_for('static',filename='images/pro2.png')}}" alt="#"/></figure>
+                     <div class="nostrud">
+                        <h3>Wash Your Hands</h3>
+                        <p>Alcohol-based hand sanitizer (containing at least 60% alcohol) is helpful in protecting against the spread of germs and viruses. However, handwashing with soap and water is still best. Hand sanitizer is effective when soap and water are not available. This includes when taking public transportation and it’s difficult to get to a bathroom.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="{{url_for('static',filename='images/pro3.png')}}" alt="#"/></figure>
+                     <div class="nostrud">
+                        <h3>Stay at Home</h3>
+                        <p>Stay home stay safe. Follow the Golden Rule. Wash your hands frequently with soap and water or use alchohol based hand-rub.Stay at Home, Maintain social distancing and let’s fight COVID.Don’t be a super-spreader. Stay home. Stay alive.If any member of the household shows symptoms of Covid-19, seek medical advice and follow your local health authority's guidance.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+{% endblock %}

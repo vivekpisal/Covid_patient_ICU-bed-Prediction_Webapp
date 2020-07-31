@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+
+<div class="about" style="margin-top: 5%;">
+         <div class="container_width">
+            <div class="row d_flex">
+                   <div class="col-md-7">
+                  <div class="titlepage text_align_left">
+                   {% if y_pred==1 %} 
+                    	<h2 style="color: red;">This Patient require ICU</h2>
+                   {% elif y_pred==2 %}
+                   		<h2 style="color: green;">This Patient not require ICU</h2>
+                   {% endif %}
+                  </div>
+               </div>
+       <div class="col-md-5">
+                  <div class="about_img text_align_center">
+                     <figure><img src="{{url_for('static',filename='images/about.png')}}" alt="#"/></figure>
+                  </div>
+               </div>
+              
+            </div>
+         </div>
+      </div>
+
+
+{% endblock %}

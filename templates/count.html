@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="cases">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center ">
+                     <h2>Cases In India</h2>
+                     <p></p>
+                  </div>
+               </div>
+            </div>
+            <div class="row d_flex">
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                    
+                     <div class="nostrud">
+                        <h3>Confirmed</h3>
+                     	<h2>{{ind_con}}</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     
+                     <div class="nostrud">
+                        <h3>Active</h3>
+                        <h2>{{ind_act}}</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                    
+                     <div class="nostrud">
+                        <h3>Deaths</h3>
+                       <h2>{{ind_det}}</h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+ <div class="cases">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center ">
+                     <h2>Cases In world</h2>
+                     <p></p>
+                  </div>
+               </div>
+            </div>
+            <div class="row d_flex">
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                    
+                     <div class="nostrud">
+                        <h3>Confirmed</h3>
+                     	<h2>{{world_con}}</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     
+                     <div class="nostrud">
+                        <h3>Active</h3>
+                        <h2>{{world_act}}</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                    
+                     <div class="nostrud">
+                        <h3>Deaths</h3>
+                       <h2>{{world_det}}</h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+{% endblock %}

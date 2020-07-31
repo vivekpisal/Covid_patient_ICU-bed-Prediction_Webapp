@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+
+<div class="cevery_bg">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <form id="colof" class="form_subscri" method="post">
+              <!--SEX--> 
+              <b style="color: white;">Gender:</b>	
+               	<div class="form-check">
+				  <input class="form-check-input" type="radio" name="sex" id="exampleRadios1" value="2" required>
+				  <label class="form-check-label" for="exampleRadios1" style="color: white;">
+				   Male
+				  </label>
+			</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="sex" id="exampleRadios2" value="1">
+					  <label class="form-check-label" for="exampleRadios2" style="color: white;">
+					    Female
+					  </label>
+					</div>
+
+					<!--Gender--->
+					<input class="newsl" placeholder="Age" type="number" name="age" style="margin-top: 10px;">
+
+					<!--Patient_Type-->
+			<b style="color: white;">Patient Type:</b>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="patient_type" id="exampleRadios1" value="2" required>
+				  <label class="form-check-label" for="exampleRadios1" style="color: white;">
+				   Inpatient
+				  </label>
+			</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="patient_type" id="exampleRadios2" value="1">
+					  <label class="form-check-label" for="exampleRadios2" style="color: white;">
+					    Outpatient
+					  </label>
+					</div>
+
+					<!--pneumonia-->
+
+					<b style="color: white;">Pneumonia:</b>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="pneumonia" id="exampleRadios1" value="1.0" required>
+				  <label class="form-check-label" for="exampleRadios1" style="color: white;">Yes</label>
+			</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="pneumonia" id="exampleRadios2" value="2.0">
+					  <label class="form-check-label" for="exampleRadios2" style="color: white;">
+					    No
+					  </label>
+					</div>
+
+					<!--intubed-->
+
+
+
+					<b style="color: white;">Intubed:</b>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="intubed" id="exampleRadios1" value="1.0" required>
+				  <label class="form-check-label" for="exampleRadios1" style="color: white;">Yes</label>
+			</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="intubed" id="exampleRadios2" value="2.0">
+					  <label class="form-check-label" for="exampleRadios2" style="color: white;">
+					    No
+					  </label>
+					</div>
+					<!--Contact With Other Patient-->
+					<b style="color: white;">Contact With Other Patient:</b>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="contact_other_covid" id="exampleRadios1" value="1.0" required>
+				  <label class="form-check-label" for="exampleRadios1" style="color: white;">Yes</label>
+			</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="contact_other_covid" id="exampleRadios2" value="2.0">
+					  <label class="form-check-label" for="exampleRadios2" style="color: white;">
+					    No
+					  </label>
+					</div>
+
+					<!--Covid Result-->
+
+					<b style="color: white;">Covid Result:</b>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="covid_res" id="exampleRadios1" value="1" required>
+				  <label class="form-check-label" for="exampleRadios1" style="color: white;">Positive</label>
+			</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="covid_res" id="exampleRadios2" value="2">
+					  <label class="form-check-label" for="exampleRadios2" style="color: white;">
+					    Negative
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="covid_res" id="exampleRadios2" value="3">
+					  <label class="form-check-label" for="exampleRadios2" style="color: white;">
+					    Awaiting Result
+					  </label>
+					</div>
+
+					<!--Diabetes-->
+
+
+					<b style="color: white;">Diabetes:</b>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="diabetes" id="exampleRadios1" value="1.0" required>
+				  <label class="form-check-label" for="exampleRadios1" style="color: white;">Yes</label>
+			</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="diabetes" id="exampleRadios2" value="2.0">
+					  <label class="form-check-label" for="exampleRadios2" style="color: white;">
+					    No
+					  </label>
+					</div>
+					<!--Hypertension-->
+					<b style="color: white;">Hypertension:</b>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="hypertension" id="exampleRadios1" value="1.0" required>
+				  <label class="form-check-label" for="exampleRadios1" style="color: white;">Yes</label>
+			</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="hypertension" id="exampleRadios2" value="2.0">
+					  <label class="form-check-label" for="exampleRadios2" style="color: white;">
+					    No
+					  </label>
+					</div>
+
+
+                 
+                  <button class="subsci_btn" type="submit">Predict</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+{% endblock %}
